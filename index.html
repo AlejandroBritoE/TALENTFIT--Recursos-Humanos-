@@ -6,6 +6,7 @@
     <title>TalentFit Consultores | Consultoría de Recursos Humanos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -200,7 +201,7 @@
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <p>talentfit@outlook.cl</p>
+                            <p>hola@talentfitconsultores.com</p>
                         </div>
                         
                         <div class="contact-item">
@@ -222,31 +223,16 @@
                     <p>Lunes a Viernes: 9:00 - 18:00</p>
                 </div> 
 
-<!--                <div class="contact-form">
-                    <form id="contactForm">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="email" placeholder="Correo electrónico" required>
-                        <input type="tel" placeholder="Teléfono">
-                        <select required>
-                            <option value="" disabled selected>Servicio de interés</option>
-                            <option>Reclutamiento & Selección</option>
-                            <option>Desarrollo Organizacional</option>
-                            <option>HR Analytics</option>
-                            <option>Capacitación & Coaching</option>
-                            <option>Otro</option>
-                        </select>
-                        <textarea placeholder="Cuéntanos sobre tus necesidades" required></textarea>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                    </form>
-                </div>    -->
-
                 <!-- Reemplaza tu formulario actual con este -->
 <div class="contact-form">
     <form id="contactForm">
+
         <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
+        <span id="nombre-error" class="error-message"></span>
         <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
-        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
-        
+        <span id="email-error" class="error-message"></span>
+        <input type="tel" name="fono" id="telefono" placeholder="Teléfono Ej: +541112345678">
+        <span id="telefono-error" class="error-message"></span>
         <select name="servicio" id="servicio" required>
             <option value="" disabled selected>Servicio de interés</option>
             <option value="Reclutamiento & Selección">Reclutamiento & Selección</option>
@@ -311,4 +297,5 @@
 
     <script src="script.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </html>
